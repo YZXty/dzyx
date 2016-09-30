@@ -1,0 +1,159 @@
+body{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		background: #000;
+		color:#fff;
+	}
+	.zimu{
+		width: 80px;
+		height: 67px;
+		line-height: 67px;
+		text-align: center;
+         font-weight: bolder;
+        background:url(../image/未标题-2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+	}
+	.game{
+		width: 100%;
+		height: 100%;
+		background-image:url(../images/bgimg2.jpg);
+		background-repeat: no-repeat;
+		background-size:100%;
+	}
+	
+	/*.options div{
+		width: 16%;
+		height: 30px;
+		float: left;
+		text-align: center;
+		line-height: 30px;
+		color: red;
+	}*/
+	.btn{
+   height: 48px;
+   width: 128px;
+   background: url(../image/anniu.png);
+   position: absolute;
+   bottom: 30px;
+   left: 40%;
+   z-index: 8888;
+   text-align: center;
+   line-height: 30px;
+   border-radius: 30px;
+   font-size: 18px;
+   color: #eee;
+   font-weight: bold;
+}
+.fenzhi{
+	width: 112px;
+	height: 55px;
+	background: url(../image/score.png);
+	background-size: 100%;
+	position: absolute;
+	top: 58px;
+	left: 85px;
+}
+.score{
+	width: 20px;
+	height: 78px;
+	position: absolute;
+	left: 200px;
+	top: 45px;
+
+	color: #30f462;
+	font-size: 35px;
+	font-family: kaiti;
+	font-weight: bolder;
+	line-height: 100px;
+
+}
+.zanting{
+  height: 30px;
+  width: 100px;
+  background: #97a1ae;
+   position: absolute;
+   bottom: 30px;
+   right: 40%;
+   z-index: 8888;
+   text-align: center;
+   line-height: 30px;
+   border-radius: 30px;
+   font-size: 18px;
+   color: #eee;
+   font-weight: bold;
+}
+.guanka1{
+	width: 112px;
+	height: 45px;
+	background: url(../image/guanka.png);
+	background-size: 100%;
+	position: absolute;
+	top: 126px;
+	left: 90px;
+
+}
+.guanka{
+	width: 20px;
+	height: 55px;
+	position: absolute;
+	left: 200px;
+	top: 103px;
+
+	color: #30f462;
+	font-size: 35px;
+	font-family: kaiti;
+	font-weight: bolder;
+	line-height: 100px;
+
+}
+.live{
+	width: 107px;
+	height: 48px;
+	background:url(../image/live2.png);
+	background-size: 100%;
+	position: absolute;
+	left: 100px;
+	top: 10px;
+}
+.life{
+	width: 20px;
+	height: 55px;
+	position: absolute;
+	left: 195px;
+	top: -15px;
+
+	color: #30f462;
+	font-size: 35px;
+	font-family: kaiti;
+	font-weight: bolder;
+	line-height: 100px;
+}
+.boner{
+    width: 175px;
+    height: 47px;
+    background:url(../image/Bonus.png);
+    background-size: 100%;
+    position: absolute;
+    left: 20px;
+    top:184px;
+}
+.bonerltr{
+	width: 15px;
+	height: 48px;
+	position: absolute;
+	left: 200px;
+	top: 164px;
+
+	color: #a37401;
+	font-size: 30px;
+	font-family: kaiti;
+	font-weight: bolder;
+	line-height: 100px;
+	text-decoration: underline;
+
+}

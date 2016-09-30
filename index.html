@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>打字游戏</title>
+</head>
+<style>
+	html,body{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		background: #000;
+		color:#fff;
+	}
+	ul,li{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	ul{
+		width: 200px;
+		height: 500px;
+		padding: 50px 25px;
+		margin-left: 30px;
+	}
+	li{
+		width: 150px;
+		height: 40px;
+		margin-bottom: 20px;
+		background: #5a9636;
+		border-radius: 20px;
+		position: relative;
+	}
+	.zimu{
+		width: 60px;
+		height: 60px;
+		color: #529013;
+		line-height: 105px;
+		font-size: 24px;
+		text-align: center;
+		font-weight: bolder;
+        background: url(images/tuzi.png) no-repeat ;
+        background-size: cover;
+        text-align: center;
+	}
+	.game{
+		width: 100%;
+		height: 100%;
+		background:url(images/dzyx2.jpg) no-repeat center center;
+		background-size:100%;
+	}
+.btn{
+   height: 35px;
+   width: 100px;
+   position: absolute;
+   bottom: 30px;
+   left: 40%;
+   z-index: 5;
+   text-align: center;
+   line-height: 35px;
+   border-radius: 30px;
+   font-size: 18px;
+   color: #eee;
+   font-weight: bold;
+   background: #fccb6e;
+   cursor: pointer;
+}
+.zanting{
+   height: 35px;
+   width: 100px;
+   background: #d74d43;
+   position: absolute;
+   bottom: 30px;
+   right: 40%;
+   z-index: 5;
+   text-align: center;
+   line-height: 35px;
+   border-radius: 30px;
+   font-size: 18px;
+   color: #eee;
+   font-weight: bold;
+   cursor: pointer;
+}
+.a{
+	width: 50%;
+	height: 100%;
+	line-height: 40px;
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	text-align: center;
+	padding-left: 10%;
+}
+.b{
+	font-size: 35px;
+	line-height: 40px;
+	color: #fffa68;
+	text-align: center;
+}
+	li div{
+		float: left;
+	}
+</style>
+<body>
+	<div class="game">
+		<div class="btn">开始</div>
+		<div class="zanting">暂停</div>
+		<ul>
+			<li class="guankabox">
+				<div class="guanka1 a">关卡：</div>
+				<div class="guanka b">1</div>
+			</li>
+			<li class="shengming">
+				<div class="live a">生命：</div>
+				<div class="life b">5</div>
+			</li>
+			<li class="fenshu">
+				<div class="fenzhi a">分数：</div>
+				<div class="score b">0</div>
+			</li>
+			<li class="zongfen">
+				<div class="boner a">总分：</div>
+				<div class="bonerltr b"></div>
+			</li>
+		</ul>
+    </div>
+</body>
+<script src="js/functions.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/index.js"></script>
+<script>
+var btn=$(".btn")[0];
+var zanting=$(".zanting")[0];
+var game=new game();
+var life=$(".life")[0];
+btn.onclick=function(){
+	animate(btn,{left:0},500);
+	animate(zanting,{right:0},500);
+	game.play();
+}
+zanting.onclick=function(){
+	alert("点击继续")
+}
+
+</script>
+</html>
